@@ -45,7 +45,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #121212;
+  background-color: rgba(18, 18, 18, 0.8);
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -146,6 +146,8 @@ body {
 
 .home-content {
   text-align: center;
+  z-index: 2;
+  position: relative;
 }
 
 .home-section::before {
@@ -523,6 +525,9 @@ body {
   .footer-content {
     flex-direction: column;
     align-items: center;
+  }
+  .about-section .about-text{
+    margin-left: 0;
   }
 }
 

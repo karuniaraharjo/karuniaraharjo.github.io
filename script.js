@@ -4,8 +4,10 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition > 100) {
         header.style.backgroundColor = 'rgba(18, 18, 18, 0.4)';
+        nav.style.backgroundColor = 'rgba(18, 18, 18, 0.4)';
     } else {
         header.style.backgroundColor = 'rgba(18, 18, 18, 0.8)';
+        nav.style.backgroundColor = 'rgba(18, 18, 18, 0.8)';
     }
 });
 
