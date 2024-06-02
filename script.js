@@ -1,5 +1,6 @@
 window.addEventListener('scroll', function() {
     var header = document.querySelector('.header');
+    var nav = document.querySelector('.nav');
     var scrollPosition = window.scrollY;
 
     if (scrollPosition > 100) {
