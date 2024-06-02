@@ -543,4 +543,7 @@ body {
   .footer{
     padding: 20px 0 5px;
   }
+  .header{
+    display: none;
+  }
 }
