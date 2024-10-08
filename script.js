@@ -1,26 +1,16 @@
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('.header');
-    var nav = document.querySelector('.nav');
-    var scrollPosition = window.scrollY;
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".content");
 
-    if (scrollPosition > 100) {
-        header.style.backgroundColor = 'rgba(18, 18, 18, 0.4)';
-        nav.style.backgroundColor = 'rgba(18, 18, 18, 0.4)';
-    } else {
-        header.style.backgroundColor = 'rgba(18, 18, 18, 0.8)';
-        nav.style.backgroundColor = 'rgba(18, 18, 18, 0.8)';
-    }
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const tabName = tab.getAttribute("data-tab");
+
+      tabs.forEach((t) => t.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
+
+      tab.classList.add("active");
+      document.getElementById(`${tabName}-content`).classList.add("active");
+    });
+  });
 });
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const navToggle = document.querySelector('.nav-toggle');
-//     const nav = document.querySelector('.nav ul');
-
-//     window.addEventListener('resize', function() {
-//         if (window.innerWidth > 768) {
-//             nav.style.display = 'flex';
-//         } else if (!navToggle.checked) {
-//             nav.style.display = 'none';
-//         }
-//     });
-// });

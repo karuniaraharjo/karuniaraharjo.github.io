@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #161b22;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto 0px auto;
+  padding: 20px 20px 0 20px;
+}
+
+/* Profil */
+.profile-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+.nama {
+  display: flex;
+  justify-content: center;
+}
+.verified {
+  height: 25px;
+  margin: auto 5px;
+}
+
+/* About */
+.about-section p {
+  text-align: justify;
+}
+
+/* --- */
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* Section */
+.education-judul,
+.skills-judul {
+  display: flex;
+}
+
+.education-icon,
+.skills-icon {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(0, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.education-icon svg,
+.skills-icon svg {
+  margin-top: 5px;
+}
+
+.education-judul h4,
+.skills-judul h4 {
+  font-size: 1.1em;
+}
+
+.education-info,
+.skills-info {
+  margin-left: 12.5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-left: 1px solid gray;
+}
+.education-info .content,
+.skills-info .content {
+  margin-left: 22px;
+}
+
+.education-info p,
+.skills-info p {
+  color: #b8b8b8;
+}
+
+.education-info .waktu,
+.skills-info .waktu {
+  color: #888888;
+  font-size: 0.8em;
+  margin-top: -3px;
+}
+
+/* Skills */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+.tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.tab.active {
+  color: #4a90e2;
+  border-bottom-color: #4a90e2;
+}
+
+.skills-section .content {
+  display: none;
+}
+.skills-section .content.active {
+  display: block;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.skill-item {
+  background-color: #2a3140;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.skill-item .icon {
+  height: 70px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-icon {
+  width: 70px;
+  height: fit-content;
+}
+.skill-name {
+  font-size: 14px;
+}
+
+/* Sertifikat */
+.certification-card {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.certification-logo {
+  width: 95%;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+/* Contact */
+.contact-section {
+  margin-bottom: 35px;
+}
+.contact-description {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.contact-link {
+  background-color: #0576ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.contact-link .content-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-link .content-link svg{
+  margin-right: 5px;
+}
+.contact-section a:hover {
+  cursor: pointer;
+  background-color: #0054bb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+footer p {
+  margin: 20px;
+  font-size: 0.9em;
+  color: #818b98;
+}
