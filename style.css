@@ -161,6 +161,51 @@ section h2 {
   border: 2px solid white;
 }
 
+/* Projects */
+.projects {
+  display: flex;
+  margin-bottom: 20px;
+}
+.project {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.project.active {
+  color: #4a90e2;
+  border-bottom-color: #4a90e2;
+}
+
+.project-section .project-content {
+  display: none;
+}
+.project-section .project-content.active {
+  display: block;
+}
+
+.project-item {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 95%;
+  margin-bottom: 10px;
+  background-color: #2a3140;
+}
+.project-item .icon {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-icon {
+  border-radius: 5px;
+  width: 100%;
+  height: fit-content;
+}
+.project-item p{
+  text-align: justify;
+}
+
 /* Contact */
 .contact-section {
   margin-bottom: 35px;
