@@ -63,7 +63,7 @@
                 ></path>
               </svg>
             </span>
-            <h4>UIN K.H Abdurrahman Wachid</h4>
+            <h4>UIN K.H. Abdurrahman Wahid Pekalongan</h4>
           </div>
           <div class="education-info">
             <div class="content">
@@ -285,7 +285,7 @@
       </section>
 
       <!-- Projects Section -->
-      <!-- <section class="project-section">
+      <section class="project-section">
         <h2>Projects</h2>
         <div class="projects">
           <div class="project active" data-project="Program">Program</div>
@@ -323,7 +323,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Contact Section -->
       <section class="contact-section">
@@ -426,8 +426,12 @@
 
     <!-- Footer -->
     <footer>
-      <p>© 2024 Karunia Raharjo</p>
+      &copy; <span id="year"></span> Karunia Raharjo
     </footer>
+  
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <script src="script.js"></script>
   </body>
